@@ -16,9 +16,8 @@ if WINDOWS:
     window.wm_attributes('-transparentcolor', 'black')
     window.wm_attributes('-topmost', True)
 elif LINUX:
-    window.wm_attributes('-type', 'splash')  # Helps with transparency on some Linux window managers
-    window.wm_attributes('-alpha', 0)  # Slight transparency as fallback
-
+    window.wm_attributes('-type', 'splash')
+    window.wm_attributes('-alpha', 1)
 animations = {
     'walk': [1, 1, 2, 2, 1, 1, 3, 2],
     'fall': [4],
